@@ -10,11 +10,13 @@
     // Module system
     "module": "commonjs",
     "moduleResolution": "node",
+    "isolatedModules": false,
     // Strictness
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "skipLibCheck": true,
+    "strictNullChecks": false,
     // Output
     "sourceMap": true,
     "removeComments": false,
