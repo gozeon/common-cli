@@ -21,7 +21,7 @@ export class Help implements Command {
 
     const sections = [
       {
-        content: `goze ${command.name} args`,
+        content: `goze ${command.name} <options> `,
         header: "Usage"
       },
       {
