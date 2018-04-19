@@ -5,7 +5,7 @@
 * [ora](https://github.com/sindresorhus/ora)
 * [better-console](https://github.com/mohsen1/better-console)
 * [minimist](https://github.com/substack/minimist)
-# [node-scanf](https://github.com/Lellansin/node-scanf)
+* [node-scanf](https://github.com/Lellansin/node-scanf)
 
 # awesome
 
