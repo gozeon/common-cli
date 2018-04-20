@@ -1,8 +1,8 @@
 import commandLineArgs = require("command-line-args");
 import commandLineCommands = require("command-line-commands");
-import {Command, ParsedCommand} from "./command/command";
-import {Init} from "./command/init";
-import {Help} from "./command/help";
+import { Command, ParsedCommand } from "./command/command";
+import { Init } from "./command/init";
+import { Help } from "./command/help";
 
 export class Goze {
   public argvs: string[];
@@ -18,9 +18,7 @@ export class Goze {
 
   public addCommand(command: Command) {
     this.commands.set(command.name, command);
-    this.commandDescriptors.push(
-      command.name,
-    );
+    this.commandDescriptors.push(command.name);
   }
 
   /**
@@ -35,7 +33,6 @@ export class Goze {
   }
 
   public async run() {
-
     let cliCommand: ParsedCommand;
     try {
       cliCommand = <ParsedCommand>commandLineCommands(this.commandDescriptors);
@@ -49,7 +46,7 @@ export class Goze {
     let options: any;
 
     try {
-      options = commandLineArgs(command.args, {argv: commandArgv});
+      options = commandLineArgs(command.args, { argv: commandArgv });
     } catch (err) {
       this.handleError(err);
     }
