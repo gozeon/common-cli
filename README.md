@@ -20,6 +20,26 @@ or
 git clone https://github.com/gozeon/common-cli <Your project Name>
 ```
 
+### install
+
+```
+npm ci
+```
+
+### dev
+
+```
+npm run dev
+```
+
+> use `npm link` to use command
+
+### build
+
+```
+npm run build
+```
+
 # License
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/gozeon/common-cli/blob/master/LICENSE)
